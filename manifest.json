@@ -1,0 +1,20 @@
+{
+  "name": "iTunes Store Browser",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "minimum_chrome_version": "17",
+  "description": "View the iTunes Store in Google Chrome",
+  "permissions": [
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "*://*.itunes.apple.com/*",
+    "*://*.itunes.com/*"
+  ],
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+  "web_accessible_resources": [
+    "js/fixes.js"
+  ]
+}
